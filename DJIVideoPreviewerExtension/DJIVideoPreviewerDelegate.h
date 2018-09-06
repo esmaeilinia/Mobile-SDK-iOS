@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DJIWidget/DJIVideoPreviewer.h>
 #import <CoreVideo/CoreVideo.h>
+#import "DJIVideoPreviewer.h"
 
 @protocol DJIVideoPreviewerDelegate <NSObject>
 

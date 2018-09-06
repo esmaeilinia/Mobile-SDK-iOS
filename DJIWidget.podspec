@@ -36,6 +36,7 @@ http://developer.dji.com/policies/eula/
 
     s.subspec 'DJIVideoPreviewerExtension' do |ss|
         ss.source_files = 'DJIVideoPreviewerExtension/*.{h,m}'
+        ss.public_header_files = 'DJIVideoPreviewerExtension/*.h'
     end
 
 end

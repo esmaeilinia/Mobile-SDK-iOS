@@ -6,7 +6,7 @@
 //  Copyright © 2018 Kiwi Information Technology Co., Ltd. All rights reserved.
 //
 
-#import <DJIWidget/DJIWidget.h>
+#import "DJIWidget.h"
 
 @protocol DJIVideoPreviewerDelegate;
 
