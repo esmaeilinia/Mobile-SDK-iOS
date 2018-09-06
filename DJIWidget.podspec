@@ -29,7 +29,7 @@ http://developer.dji.com/policies/eula/
 
     s.pod_target_xcconfig = {
         'ENABLE_BITCODE' => 'NO',
-        'HEADER_SEARCH_PATHS' => '$(inherited) $(PROJECT_DIR)/DJIWidget/FFmpeg/FFmpeg.framework/Headers "${PODS_ROOT}/../../Mobile-SDK-iOS/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers"',
+        'HEADER_SEARCH_PATHS' => '$(inherited) $(PROJECT_DIR)/DJIWidget/FFmpeg/FFmpeg.framework/Headers',
     }
     
     s.dependency 'DJI-SDK-iOS', '~> 4.7.1'
