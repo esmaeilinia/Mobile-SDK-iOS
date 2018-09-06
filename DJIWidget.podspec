@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'DJIWidget'
     s.version = '1.0'
-    s.author = { 'lacklock' => 'lacklock@gmail.com',
+    s.author = { 'Lacklock' => 'lacklock@gmail.com',
                  'Owen'     => 'wen.pandara@gmail.com' }
     s.license = { :type => 'CUSTOM', :text => <<-LICENSE
 ****************************************************************************************************************************
@@ -13,7 +13,7 @@ http://developer.dji.com/policies/eula/
     LICENSE
     }
 
-    s.homepage = 'git@github.com:gzkiwiinc/Mobile-SDK-iOS.git'
+    s.homepage = 'https://github.com/gzkiwiinc/Mobile-SDK-iOS'
     s.source = { :git => 'git@github.com:gzkiwiinc/Mobile-SDK-iOS.git', :tag => "w#{s.version}"}
     s.summary = 'DJIWidget'
     s.platform = :ios, '10.0'
@@ -32,9 +32,9 @@ http://developer.dji.com/policies/eula/
         'HEADER_SEARCH_PATHS' => '$(inherited) $(PROJECT_DIR)/DJIWidget/FFmpeg/FFmpeg.framework/Headers "${PODS_ROOT}/../../Mobile-SDK-iOS/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers"',
     }
     
-    s.denpendency 'DJI-SDK-iOS', '~> 4.7.1'
+    s.dependency 'DJI-SDK-iOS', '~> 4.7.1'
 
-    s.subspec 'DJIVideoPreviewer' do |ss|
+    s.subspec 'DJIVideoPreviewerExtension' do |ss|
         ss.source_files = 'DJIVideoPreviewerExtension/*.{h,m}'
     end
 
