@@ -23,11 +23,11 @@ http://developer.dji.com/policies/eula/
 
     s.module_name = 'DJIWidget'
 
-    s.source_files = 'Sample code/DJIWidget/DJIWidget/*.{h,m,c}', 'Sample code/DJIWidget/DJIWidget/**/*.{h,m,c}', 'Sample code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/*.h'
+    s.source_files = 'Sample code/DJIWidget/DJIWidget/*.{h,m,c}', 'Sample code/DJIWidget/DJIWidget/**/*.{h,m,c}'
 
     s.pod_target_xcconfig = {
         'ENABLE_BITCODE' => 'NO',
-        'HEADER_SEARCH_PATHS' => '$(inherited) "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers"',
+        'HEADER_SEARCH_PATHS' => '$(inherited) "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/**"',
     }
     
     s.dependency 'DJI-SDK-iOS', '~> 4.7.1'
