@@ -27,16 +27,7 @@ http://developer.dji.com/policies/eula/
 
     s.pod_target_xcconfig = {
         'ENABLE_BITCODE' => 'NO',
-        'HEADER_SEARCH_PATHS' => '$(inherited) 
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavcodec" 
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavdevice"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavfilter"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavformat"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavresample"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavutil"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libswresample"
-        "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libswscale"',
+        'HEADER_SEARCH_PATHS' => '$(inherited) "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavcodec" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavdevice" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavfilter" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavformat" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavresample" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libavutil" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libswresample" "$(PROJECT_DIR)/DJIWidget/Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/libswscale"',
     }
     
     s.dependency 'DJI-SDK-iOS', '~> 4.7.1'
