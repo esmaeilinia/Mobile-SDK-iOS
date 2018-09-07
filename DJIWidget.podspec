@@ -23,7 +23,7 @@ http://developer.dji.com/policies/eula/
 
     s.module_name = 'DJIWidget'
 
-    s.source_files = 'Sample code/DJIWidget/DJIWidget/*.{h,m,c}', 'Sample code/DJIWidget/DJIWidget/**/*.{h,m,c}', 'Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/*.h', 'Sample Code/DJIWidget/FFmpeg/FFmpeg.framework/Headers/**/*.h'
+    s.source_files = 'Sample code/DJIWidget/DJIWidget/*.{h,m,c}', 'Sample code/DJIWidget/DJIWidget/**/*.{h,m,c}'
 
 
     s.pod_target_xcconfig = {

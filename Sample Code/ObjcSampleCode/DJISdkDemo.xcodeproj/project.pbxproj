@@ -2719,7 +2719,6 @@
 				F4FE84ED1BD8CEF600E51FB4 /* Embed Frameworks */,
 				3836D72E1C10EF3C0075180B /* Prepare DJISDK Framework for AppStore Upload */,
 				00CEDD5ABC221F65DA1E3089 /* [CP] Embed Pods Frameworks */,
-				63917274DA59C909239925C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2740,7 +2739,7 @@
 				ORGANIZATIONNAME = DJI;
 				TargetAttributes = {
 					3B16A8E719D12167008C1818 = {
-						DevelopmentTeam = 7UL3LRJL93;
+						DevelopmentTeam = D386W4TDPJ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
@@ -3390,7 +3389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3836D72E1C10EF3C0075180B /* Prepare DJISDK Framework for AppStore Upload */ = {
@@ -3406,21 +3405,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "bash \"${SRCROOT}/Pods/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework/strip-frameworks.sh\"";
-		};
-		63917274DA59C909239925C6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJISdkDemo/Pods-DJISdkDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3605,7 +3589,7 @@
 				CODE_SIGN_ENTITLEMENTS = DJISdkDemo/DJISdkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				DEVELOPMENT_TEAM = D386W4TDPJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3623,7 +3607,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.sdksamplecode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwiinc.sdksamplecode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3643,7 +3627,7 @@
 				CODE_SIGN_ENTITLEMENTS = DJISdkDemo/DJISdkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7UL3LRJL93;
+				DEVELOPMENT_TEAM = D386W4TDPJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3661,7 +3645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.sdksamplecode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwiinc.sdksamplecode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
