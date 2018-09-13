@@ -12,6 +12,6 @@
 
 @interface DJIVideoPreviewer (Delegate)
 
-@property (nonatomic, weak) id <DJIVideoPreviewerDelegate> delegate;
+@property (nonatomic, weak, nullable) id <DJIVideoPreviewerDelegate> delegate;
 
 @end
