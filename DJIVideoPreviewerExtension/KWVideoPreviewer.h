@@ -10,7 +10,7 @@
 
 @class KWVideoPreviewer;
 
-@protocol DJIVideoPreviewerDelegate <NSObject>
+@protocol KWVideoPreviewerDelegate <NSObject>
 
 - (void)kwVideoPreviewer:(nonnull KWVideoPreviewer *)videoPreviewer willProcessImageBuffer:(nonnull CVImageBufferRef)imageBuffer;
 
@@ -18,6 +18,6 @@
 
 @interface KWVideoPreviewer : DJIVideoPreviewer
 
-@property (nonatomic, weak, nullable) id <DJIVideoPreviewerDelegate> delegate;
+@property (nonatomic, weak, nullable) id <KWVideoPreviewerDelegate> delegate;
 
 @end
